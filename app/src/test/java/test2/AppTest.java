@@ -12,12 +12,26 @@ class AppTest {
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 
-    void SumaCorrecta() {
+    void registrar_uauari(nom_usuari, correu_electronic) {
         App classUnderTest = new App();
-        assertEquals(6, classUnderTest.sumar(3,3));
+        
     }
-    void RestaCorrecta() {
+    void eliminar_usuari(nom_usuari) {
         App classUnderTest = new App();
-        assertEquals(3, classUnderTest.sumar(6,3));
+        
+    }
+
+    registrar_habitacio(numero, tipus, preu) {
+        App classUnderTest = new App();
+    }
+    eliminar_habitacio(numero) {
+        App classUnderTest = new App();
+    }
+    llistar_habitacions() {
+        App classUnderTest = new App();
+    }
+
+    fer_reserva(numero_habitacio, usuari) {
+        App classUnderTest = new App();
     }
 }
