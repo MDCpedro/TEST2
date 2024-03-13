@@ -7,31 +7,46 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    
+    @Test
+    void registrar_usuari(nom_usuari, correu_electronic) {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        assertTrue(usuario_creado);
     }
 
-    void registrar_uauari(nom_usuari, correu_electronic) {
-        App classUnderTest = new App();
-        
-    }
+    @Test
     void eliminar_usuari(nom_usuari) {
         App classUnderTest = new App();
+        asserTrue(usuario_eliminado);
+    }
+
+    @Test
+    void registrar_habitacio(numero, tipus, preu) {
+        App classUnderTest = new App();
+        assertTrue(habitaion_registrada);
+    }
+
+    @Test
+    void eliminar_habitacio(numero) {
+        App classUnderTest = new App();
+        assertTrue(habitacion_eliminada);
+    }
+
+    @Test
+    void llistar_habitacions() {
+        App classUnderTest = new App();
         
     }
 
-    registrar_habitacio(numero, tipus, preu) {
+    @Test
+    void fer_reserva(numero_habitacio, usuari) {
         App classUnderTest = new App();
-    }
-    eliminar_habitacio(numero) {
-        App classUnderTest = new App();
-    }
-    llistar_habitacions() {
-        App classUnderTest = new App();
+        asserTrue(reserva_hecha);
     }
 
-    fer_reserva(numero_habitacio, usuari) {
+    @Test
+    void visualitza_reserves(usuari) {
         App classUnderTest = new App();
+        asserTrue(reserva_hecha);
     }
 }
