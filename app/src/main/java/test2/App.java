@@ -4,9 +4,13 @@
 package test2;
 
 public class App {
-    
     public static void main(String[] args) {
         
+    }
+
+    public void registrar_usuari(String nom_usuari, String correu_electronic) {
+        Usuario usuario = new Usuario(nom_usuari, correu_electronic);
+         
     }
 
     
