@@ -16,5 +16,19 @@ public class Habitacion {
     public int getNumero() {
         return numero;
     }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    public String getTipo() {
+        return tipo;
+    }
 }
 

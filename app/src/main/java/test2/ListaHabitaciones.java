@@ -19,6 +19,12 @@ public class ListaHabitaciones {
         return;
     }
 
+    public void listarHabitaciones() {
+        for (Habitacion habitacion : listaHab) {
+            System.out.println((habitacion.getNumero() +" - "+ (habitacion.getTipo() +" - "+ (habitacion.getPrecio()))));
+        }
+    }
+
     public boolean comprobarHabitacion(Habitacion habitacion) {
         for (Habitacion habitaciondeLista : listaHab) {
             if (habitaciondeLista.getNumero() == (habitacion.getNumero())) {
