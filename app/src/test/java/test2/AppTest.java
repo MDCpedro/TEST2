@@ -6,31 +6,50 @@
 // import org.junit.jupiter.api.Test;
 // import static org.junit.jupiter.api.Assertions.*;
 
-// class AppTest {
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
+class AppTest {
     
-//     @Test
-//     void registrar_usuari(nom_usuari, correu_electronic) {
-//         App classUnderTest = new App();
-//         assertTrue(usuario_creado);
-//     }
+    @Test
+    void addUsuario() {
+        App classUnderTest = new App();
+        ListaUsuarios listaUsuarios = new ListaUsuarios();
+        Usuario User1 = new Usuario("Pablo", "Pablopro@gmail.com");
+        listaUsuarios.addUsuario(User1);
+        assertTrue(listaUsuarios.coprobarUsuario(User1));
+    }
 
-//     @Test
-//     void eliminar_usuari(nom_usuari) {
-//         App classUnderTest = new App();
-//         asserTrue(usuario_eliminado);
-//     }
+    @Test
+    void removeUsuario() {
+        App classUnderTest = new App();
+        ListaUsuarios listaUsuarios = new ListaUsuarios();
+        Usuario User1 = new Usuario("Pablo", "Pablopro@gmail.com");
+        listaUsuarios.addUsuario(User1);
+        listaUsuarios.removeUsuario(User1);
+        assertFalse(listaUsuarios.coprobarUsuario(User1));
+    }
 
-//     @Test
-//     void registrar_habitacio(numero, tipus, preu) {
-//         App classUnderTest = new App();
-//         assertTrue(habitaion_registrada);
-//     }
+    @Test
+    void addHabitacion() {
+        App classUnderTest = new App();
+        ListaHabitaciones listaHabitaciones = new ListaHabitaciones();
+        Habitacion habitacion1 = new Habitacion(1, "ventana", 200);
+        listaHabitaciones.addHabitacion(habitacion1);
+        assertTrue(listaHabitaciones.comprobarHabitacion(habitacion1));
+    }
 
-//     @Test
-//     void eliminar_habitacio(numero) {
-//         App classUnderTest = new App();
-//         assertTrue(habitacion_eliminada);
-//     }
+    @Test
+    void removeHabitacion() {
+        App classUnderTest = new App();
+        ListaHabitaciones listaHabitaciones = new ListaHabitaciones();
+        Habitacion habitacion1 = new Habitacion(1, "ventana", 200);
+        listaHabitaciones.addHabitacion(habitacion1);
+        listaHabitaciones.removeHabitacion(habitacion1);
+        assertFalse(listaHabitaciones.comprobarHabitacion(habitacion1));
+    }
 
 //     @Test
 //     void llistar_habitacions() {
@@ -49,4 +68,4 @@
 //         App classUnderTest = new App();
 //         asserTrue(reserva_hecha);
 //     }
-// }
+}
