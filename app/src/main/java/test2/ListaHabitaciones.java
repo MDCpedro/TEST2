@@ -25,6 +25,8 @@ public class ListaHabitaciones {
         }
     }
 
+   
+
     public boolean comprobarHabitacion(Habitacion habitacion) {
         for (Habitacion habitaciondeLista : listaHab) {
             if (habitaciondeLista.getNumero() == (habitacion.getNumero())) {

@@ -19,6 +19,7 @@ public class ListaUsuarios {
         return;
     }
 
+
     public boolean coprobarUsuario(Usuario usuario) {
         for (Usuario usuarioDeLista : lista) {
             if(usuarioDeLista.getCorreu_electronic().equals(usuario.getCorreu_electronic())){

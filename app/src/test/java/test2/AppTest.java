@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import org.junit.jupiter.api.Test;
+
 
 class AppTest {
     
@@ -65,11 +65,15 @@ class AppTest {
         assertTrue(comprobarLista.contains("ventana"));
     }
 
-//     @Test
-//     void fer_reserva(numero_habitacio, usuari) {
-//         App classUnderTest = new App();
-//         asserTrue(reserva_hecha);
-//     }
+    @Test
+    void HacerReserva() {
+        App classUnderTest = new App();
+        ListaHabitaciones listaHabitaciones = new ListaHabitaciones();
+        Habitacion habitacion1 = new Habitacion(1, "ventana", 200);
+        Usuario User1 = new Usuario("Pablo", "Pablopro@gmail.com");
+        User1.HacerReserva(habitacion1, User1);
+        assertTrue(habitacion1.estaReservada());
+    }
 
 //     @Test
 //     void visualitza_reserves(usuari) {

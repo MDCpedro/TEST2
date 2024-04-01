@@ -4,6 +4,7 @@ public class Habitacion {
     private int numero;
     private String tipo;
     private int precio;
+    private boolean reservada;
 
     public Habitacion(int numero, String tipo, int precio) {
         this.tipo = tipo;
@@ -29,6 +30,13 @@ public class Habitacion {
     }
     public String getTipo() {
         return tipo;
+    }
+
+    public boolean estaReservada() {
+        return reservada;
+    }
+    public void setReserva(boolean reservada) {
+        this.reservada = reservada;
     }
 }
 
