@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2024-04-16T16:36:11" hostname="DESKTOP-IOFS6O2" time="0.021">
+  <properties/>
+  <testcase name="listarHabitaciones()" classname="AppTest" time="0.014"/>
+  <testcase name="addHabitacion()" classname="AppTest" time="0.001"/>
+  <testcase name="removeHabitacion()" classname="AppTest" time="0.0"/>
+  <testcase name="removeUsuario()" classname="AppTest" time="0.002"/>
+  <testcase name="addUsuario()" classname="AppTest" time="0.0"/>
+  <testcase name="HacerReserva()" classname="AppTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
